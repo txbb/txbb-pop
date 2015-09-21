@@ -2,7 +2,7 @@
  * Txbb.Pop 组件
  *
  * 同学帮帮弹出层组件
- * 0.1
+ * 0.1.1
  * by zhangyang
  */
 (function(factory) {
@@ -117,7 +117,7 @@
         'text-align': 'center',
         'line-height' : '1.4',
         'padding' : '2em 1em',
-        'z-index': 5
+        'z-index': 10
     };
 
     function hideToast() {
@@ -155,6 +155,7 @@
         'height' : '100%',
         'top' : 0,
         'left' : 0,
+        'z-index' : 10,
         'background-color' : 'rgba(0,0,0,.7)'
     };
     var modalStyle = {
@@ -166,15 +167,15 @@
         'box-sizing' : 'border-box',
         'opacity' : 0,
         '-webkit-transform' : 'scale(0.7)',
+        'z-index' : 10,
         '-webkit-transition' : 'all .2s ease'
     };
     var titleStyle = {
-        'margin': '-10px',
+        'margin': '-10px -10px 0 -10px',
         'font-size' : '18px',
         'line-height' : '2.4',
         'text-align' : 'center',
         'font-weight': 'normal',
-        'margin-bottom' : '10px',
         'color' : '#333'
     };
     var btnStyle = {
@@ -198,7 +199,7 @@
     var actionStyle = {
         'padding' : '10px',
         'text-align' : 'center',
-        'margin' : '10px -10px -10px -10px',
+        'margin' : '0 -10px -10px -10px'
     };
     var bodyStyle = {
         'max-height' : '200px',
@@ -248,6 +249,9 @@
             wrap._addEvent('touchmove', function(e) {
                 if (e.target.id === id)
                     e.preventDefault();
+            })._addEvent('click', function(e) {
+                if (e.target.id === id)
+                    hideModal();
             });
         }
 
