@@ -1,0 +1,25 @@
+{
+  "name": "txbb-pop",
+  "main": "txbb-pop.js",
+  "version": "0.1.0",
+  "authors": [
+    "zhangyang <px.zhangyang@gmail.com>"
+  ],
+  "description": "同学帮帮弹出层类组件",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "txbb",
+    "pop"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

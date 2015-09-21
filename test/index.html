@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Txbb.Pop 同学帮帮弹出层类组件测试</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <style>
+    html {font-size: 10px;}
+    body {font-size: 12px;}
+    .modal-article {text-align: left;}
+    .modal-article h1 {font-size: 1.6rem;color: #333;}
+    .modal-article p {font-size: 1.2rem;color: gray;}
+    </style>
+    <script src="../txbb-pop.js"></script>
+</head>
+<body>
+    <h1>toast</h1>
+    <p><button onclick="Txbb.Pop('toast', '您触发了这个Toast,您触发了这个Toast,您触发了这个Toast')">toast</button></p>
+
+    <h1>modal</h1>
+    <p><button onclick="Txbb.Pop('modal', opt)">带cancel的modal</button></p>
+    <p><button onclick="Txbb.Pop('modal', opt2)">不带cancel的modal</button></p>
+    <p><button onclick="Txbb.Pop('modal', opt3)">显示dom的modal</button></p>
+
+    <div id="J-ModalText2">
+        <div class="modal-article">
+            <h1>VIP加薪</h1>
+            <p>1. VIP用户报名帮帮精选岗位，每日加薪5元</p>
+            <h1>VIP加薪</h1>
+            <p>1. VIP用户报名帮帮精选岗位，每日加薪5元</p>
+            <h1>VIP加薪</h1>
+            <p>1. VIP用户报名帮帮精选岗位，每日加薪5元</p>
+            <h1>VIP加薪</h1>
+            <p>1. VIP用户报名帮帮精选岗位，每日加薪5元</p>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+
+    <script>
+    var opt = {
+        body : '<p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p><p>您触发了这个modal</p>',
+        title: '提示',
+        okText: '好的吧',
+        cancelText: '自定义取消',
+        cancel: function(){}
+    }
+    var opt2 = {
+        body : '你确定删除此项元素吗',
+        title : '提示'
+    };
+    var opt3 = {
+        body : document.getElementById('J-ModalText2'),
+        title : '提示',
+        okText: '知道了'
+    };
+    </script>
+</body>
+</html>
