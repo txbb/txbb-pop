@@ -5,8 +5,10 @@
 弹出层是常见的业务场景，而且弹出层的业务场景很简单，没必要使用大而全的库，并且，我们经常会有 *层上层* 这种情况，因此笔者写了两个功能， `toast` 及 `modal`。
 
 ## 包含两个业务点
-- toast
-- modal
+toast 和 modal
+
+![](test/toast.jpg)
+![](test/modal.png)
 
 ## API
 ### toast
