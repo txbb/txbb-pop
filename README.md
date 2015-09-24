@@ -22,9 +22,9 @@ Txbb.Pop('modal', options);
 ```
 
 #### options
-- body: 显示内容，可以是纯字符串，也可以是 dom 元素，当使用 dom 元素时，其 innerHTML 会被显示。
+- body: 显示内容，可以是纯字符串，也可以是 dom 元素，当使用 dom 元素时，其 innerHTML 会被显示
 - title: 显示标题
-- ok: 确认回调
+- ok: 确认回调,如果在点击确定按钮之后不想要隐藏掉当前窗体, 就在ok回调中 `return false`
 - cancel: 取消回调
 - okText: 确认按钮文字
 - cancelText: 取消按钮文字

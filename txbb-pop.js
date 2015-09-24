@@ -163,7 +163,11 @@
         'background-color' : 'white',
         'border-radius' : '4px',
         'padding' : '10px',
-        'margin': '20px auto 0',
+        'margin-top': '-150px',
+        'margin-left': '-150px',
+        'position' : 'absolute',
+        'left' : '50%',
+        'top' : '50%',
         'box-sizing' : 'border-box',
         'opacity' : 0,
         '-webkit-transform' : 'scale(0.7)',
@@ -268,8 +272,9 @@
         var btnOk = elem('button', {innerHTML : okText});
         btnOk._css(extend(btnStyle, okBtnStyle));
         btnOk._addEvent('click', function(){
-            okCb(modalElem);
-            hideModal();
+            var result = okCb(modalElem);
+            if (result !== false)
+                hideModal();
         });
 
         var actionElem = elem('div');
