@@ -1,7 +1,6 @@
 {
   "name": "txbb-pop",
   "main": "txbb-pop.js",
-  "version": "0.1.0",
   "authors": [
     "zhangyang <px.zhangyang@gmail.com>"
   ],
