@@ -298,20 +298,27 @@
         } else {
             bodyElem = elem('div', {innerHTML : body});
         }
-        bodyElem._css(bodyStyle);
+
         bodyElem._addEvent('touchend', function(e) {
             e.preventDefault();
         });
 
         modalElem.appendChild(bodyElem);
         modalElem.appendChild(actionElem);
-
-        // 动画
+        
         setTimeout(function() {
             modalElem._css({
                 '-webkit-transform' : 'scale(1)',
                 'opacity' : 1
             });
+            if (bodyElem.offsetHeight >= 200) {
+                bodyElem._css(extend(bodyStyle, {
+                    'border-top' : '1px solid #eee',
+                    'border-bottom' : '1px solid #eee'
+                }));
+            } else {
+                bodyElem._css(bodyStyle);
+            }
         }, 100);
     }
 
