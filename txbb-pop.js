@@ -2,7 +2,7 @@
  * Txbb.Pop 组件
  *
  * 同学帮帮弹出层组件
- * 0.2.0
+ * 0.2.1
  * by zhangyang
  */
 (function(factory) {
@@ -91,10 +91,10 @@
             top: 0
         };
         var dom = this;
-        while (dom !== document.body) {
+        while (dom && dom !== document.body) {
             offset.left += dom.offsetLeft;
             offset.top += dom.offsetTop;
-            dom = dom.parentNode;
+            dom = dom.offsetParent; // 0.1.1 修复 _offset 方法错误
         }
         return offset;
     };
