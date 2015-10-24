@@ -138,7 +138,7 @@
             q('#J-TxbbToast')._css({
                 'opacity' : 1,
                 '-webkit-transition' : 'none'
-            });
+            }).innerHTML = msg;
             hideToast();
             return;
         }
