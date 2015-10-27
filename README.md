@@ -25,3 +25,4 @@ Txbb.Pop('modal', options);
 - cancel: 取消回调
 - okText: 确认按钮文字
 - cancelText: 取消按钮文字
+- dontCloseClickBack: boolean类型，如果不想点击黑色背景关闭窗体，就将该值设为true
