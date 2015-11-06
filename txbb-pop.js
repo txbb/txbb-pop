@@ -2,7 +2,7 @@
  * Txbb.Pop 组件
  *
  * 同学帮帮弹出层组件
- * 0.3.0
+ * 0.3.1
  * by zhangyang
  */
 (function(factory) {
