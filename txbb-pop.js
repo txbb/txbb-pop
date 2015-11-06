@@ -109,7 +109,7 @@
         'color': '#fff',
         'font-size': '16px',
         'border-radius': '4px',
-        'position': 'absolute',
+        'position': 'fixed',
         'top': '30%',
         'left': '50%',
         'margin-top': '-40px',
