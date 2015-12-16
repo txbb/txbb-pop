@@ -2,7 +2,7 @@
  * Txbb.Pop 组件
  *
  * 同学帮帮弹出层组件
- * 0.3.2
+ * 0.4.0
  * by zhangyang
  */
 (function (factory) {
@@ -296,6 +296,8 @@
         hideModal();
       });
       actionElem.appendChild(btnCancel);
+    } else {
+      btnOk._css({width: '180px'});
     }
 
     var bodyElem;
